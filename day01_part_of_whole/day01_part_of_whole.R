@@ -2,6 +2,9 @@ library(ggplot2)
 library(dplyr)
 library(tidyr)
 
+
+#data from:
+#https://unstats-undesa.opendata.arcgis.com/datasets/indicator-10-6-1-proportion-of-voting-rights-of-developing-countries-in-international-organizations-by-organization-percent-5
 #Indicator 10.6.1: Proportion of members and voting rights 
 # of developing countries in international organizations
 
@@ -24,10 +27,17 @@ df_long <- df %>%
   tidyr::pivot_longer(cols=3:6) %>%
   tidyr::separate(col = name, into = c("type","year"))
   
-
+library(ggfx)
+library(ggtext)
 
 ggplot(data=df_long,aes(x = "", y = value, fill = type )) + 
-  geom_bar(stat = "identity", position = position_fill()) +
+  with_outer_glow(
+    geom_bar(stat = "identity", position = position_fill()),
+    id="bars"
+  )+
+  with_inner_glow(
+    "bars", colour = "white", sigma = 5
+  ) + 
   geom_text(aes(label = round(value)), position = position_fill(vjust = 0.5)) +
   coord_polar(theta = "y") +
   facet_grid(year ~ stringr::str_wrap(nameOfInternationalInstitution1,15))  +
@@ -37,5 +47,8 @@ ggplot(data=df_long,aes(x = "", y = value, fill = type )) +
         axis.text = element_blank(),
         axis.ticks = element_blank(),
         strip.text = element_text(family="sans",size=12,colour="midnightblue")) + 
-  labs(caption="Percentage")+
-  theme(legend.position="none")  
+  labs(title="Proportion of voting rights of <span style='color:goldenrod;'>developing countries</span> in international organizations by organization",
+       caption = "Data: UN Stats (Sustainable Development Goal 10: Reduce Inequality within and among countries)")+
+  theme(legend.position="none",
+        panel.grid = element_blank(),
+        plot.title = element_markdown())  
