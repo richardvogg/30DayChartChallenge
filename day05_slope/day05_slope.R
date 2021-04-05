@@ -64,17 +64,16 @@ final %>%
   ) +
   with_inner_glow(
     geom_flag(aes(country = code_icons),size=8),
-    colour = "white",
     id = "flags"
   ) +
   with_outer_glow(
-    "flags"
+    "flags",colour = "white"
   ) +
   geom_text_repel(data = subset(final, Year == 2010),
-            aes(label = Country), hjust = 1, nudge_x = -0.05,
+            aes(label = Country), hjust = 1, nudge_x = -0.06,
             segment.color = NA, family = "Prata") +
   geom_text_repel(data = subset(final, Year == 2020),
-            aes(label = Country), hjust = 0, nudge_x = 0.05,
+            aes(label = Country), hjust = 0, nudge_x = 0.06,
             segment.color = NA, family = "Prata") +
   scale_x_discrete(position = "top") +
   scale_color_manual(values = c("darkgreen","red")) +
