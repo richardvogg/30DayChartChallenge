@@ -1,6 +1,5 @@
 ### The many faces of the Beta distribution
 
-library(gt)
 library(ggplot2)
 library(dplyr)
 
