@@ -26,6 +26,6 @@ My contributions to the 30DayChartChallenge. The original page and description c
 
 ![](day06_experimental/plot.png)
 
-## Day 9 - Statistical
+## Day 9 - Statistics
 
-![](day09_statistical/plot.png)
+![](day09_statistics/plot.png)
