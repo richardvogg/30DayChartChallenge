@@ -55,17 +55,20 @@ trades %>%
   ) +
   scale_x_log10(labels = scales::dollar_format()) +
   scale_color_manual(values = c("darkorange", "blue")) +
-  facet_grid(product_shortname_english ~ .) +
+  facet_grid(stringr::str_wrap(product_shortname_english,10) ~ .) +
   labs(title = "Countries and animal trade",
        subtitle = paste0("Import of living animals has increased between ",
        "<span style='color:darkorange;'>1998</span> ",
        "and <span style='color:blue;'>2018</span>. <br>",
-       "Import value distribution of all countries shown, and China as an example for a country with large increase."), 
+       "Import value distribution of all countries shown, <br> and China as an example for a country with large increase."), 
        x = "Import value [$]", 
-       y = "Proportion of countries") +
+       y = "Proportion of countries",
+       caption = "Data: OpenTradeStatistics") +
   theme(axis.text.y = element_blank(),
         axis.ticks.y = element_blank(),
-        strip.text = element_text(),
-        plot.subtitle = element_markdown(vjust = 0.1, lineheight = 1.5),
-        legend.position = "none")
+        plot.subtitle = element_markdown(vjust = 0.1, lineheight = 1.5, size = 15),
+        legend.position = "none",
+        plot.title = element_text(size = 20),
+        strip.text = element_text(size = 12),
+        axis.text.x = element_text(size = 12))
 
