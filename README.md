@@ -26,6 +26,14 @@ My contributions to the 30DayChartChallenge. The original page and description c
 
 ![](day06_experimental/plot.png)
 
+## Day 8 - Animals
+
+![](day08_animals/plot.png)
+
 ## Day 9 - Statistics
 
 ![](day09_statistics/plot.png)
+
+## Day 10 - Abstract
+
+![](day10_abstract/plot.png)
