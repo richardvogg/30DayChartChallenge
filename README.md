@@ -44,7 +44,7 @@ My contributions to the 30DayChartChallenge. The original page and description c
 
 ## Day 12 - Strips
 
-![](day12_strips/plot.png)
+![](day12_strip/plot.png)
 
 ## Day 13 - Correlation
 
