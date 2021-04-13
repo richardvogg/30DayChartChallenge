@@ -41,3 +41,4 @@ df_long %>%
         legend.position = "none",
         plot.caption = element_text(size = 18, vjust = 15, family = "Sans"))
 
+
