@@ -41,3 +41,11 @@ My contributions to the 30DayChartChallenge. The original page and description c
 ## Day 11 - Circular
 
 ![](day11_circular/plot.png)
+
+## Day 12 - Strips
+
+![](day12_strips/plot.png)
+
+## Day 13 - Correlation
+
+![](day13_correlation/plot.png)
