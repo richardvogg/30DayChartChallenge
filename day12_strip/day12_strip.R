@@ -28,7 +28,7 @@ df_mean <- df_long %>%
 
 df_long %>%
   filter(value != 0) %>%
-  ggplot(aes(x = str_wrap(question,40), y = value, col = type)) + 
+  ggplot(aes(x = str_wrap(question,35), y = value, col = type)) + 
   geom_jitter(alpha = 0.01, width = 0.2, height = 0.5) +
   geom_point(data = df_mean, col = "black") +
   scale_color_brewer(palette = "Dark2") +
@@ -37,6 +37,7 @@ df_long %>%
   facet_wrap(~ type, scales = "free_y", ncol = 2) +
   labs(caption = "Responses of 3000 participants \nto the Big 5 personality test \n(Data: Kaggle)") +
   theme(axis.title = element_blank(),
+        axis.text = element_text(lineheight = 0.7),
         legend.position = "none",
-        plot.caption = element_text(size = 16, vjust = 15))
+        plot.caption = element_text(size = 18, vjust = 15, family = "Sans"))
 
