@@ -49,3 +49,11 @@ My contributions to the 30DayChartChallenge. The original page and description c
 ## Day 13 - Correlation
 
 ![](day13_correlation/plot.png)
+
+## Day 14 - Space
+
+![](day14_space/plot.png)
+
+## Day 15 - Multivariate
+
+![](day15_multivariate/plot.png)
