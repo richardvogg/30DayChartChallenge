@@ -109,4 +109,5 @@ BBCC
 BBCC
 "
 
-wrap_plots(A = icecream, B = pcs, C = pca_ice, design = layout)
+icecream + pcs + pca_ice + plot_layout(design = layout) +
+  plot_annotation(caption = "Data: Kaggle")
