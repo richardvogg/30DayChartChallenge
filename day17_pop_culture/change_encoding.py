@@ -8,4 +8,5 @@ Created on Sat Sep  5 11:05:24 2020
 
 
 def change_encoding(text):
-    return text.encode('latin-1').decode('utf-8')
+    return text.encode('Windows-1252', errors = "ignore").decode('UTF-8', errors = "ignore")
+

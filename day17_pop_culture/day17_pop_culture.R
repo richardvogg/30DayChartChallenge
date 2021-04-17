@@ -14,7 +14,8 @@ youtube <- read.csv("C:/Richard/R and Python/Datasets/Youtube_USvideos.csv") %>%
          day = substr(trending_date,4,5),
          month = substr(trending_date,7,8),
          trending_date = as.Date(paste0("20",year,"-",month,"-",day)),
-         publish_time = as.Date(substr(publish_time,1,10))) %>%
+         publish_time = as.Date(substr(publish_time,1,10)),
+         title = sapply(title, change_encoding)) %>%
   group_by(video_id) %>%
   summarise(across(trending_date:comment_count, last)) %>%
   mutate(like_percentage = likes / views,
@@ -59,6 +60,9 @@ comments <- make_top_10(comment_percentage, "Most comments per view")
 
 library(patchwork)
 
-views + likes + comments + plot_layout(nrow = 1)
+views + likes + comments + plot_layout(nrow = 1) +
+  plot_annotation(title = "Trending Youtube Videos in 2017/18",
+                  caption = "Data: Kaggle") &
+  theme(plot.title = element_text(size = 17))
 
 
