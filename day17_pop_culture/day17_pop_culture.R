@@ -22,7 +22,6 @@ youtube <- read.csv("C:/Richard/R and Python/Datasets/Youtube_USvideos.csv") %>%
          dislike_percentage = dislikes / views,
          comment_percentage = comment_count / views)
 
-variable <- "views"
 
 make_top_10 <- function(vari, title_name) {
   youtube %>%
@@ -38,8 +37,8 @@ make_top_10 <- function(vari, title_name) {
               position = position_nudge(y = 0.4),
               fontface = "bold", size = 4, lineheight = 0.6) +
     geom_text(aes(x = {{vari}}, y = rank, 
-                  #label = scales::comma({{vari}})),
-                  label = scales::percent({{vari}}, accuracy = 0.1)),
+                  label = scales::comma({{vari}})),
+                  #label = scales::percent({{vari}}, accuracy = 0.1)),
               color = "goldenrod", hjust = 1.1,
               fontface = "bold", size = 4) +
     labs(title = title_name) +
@@ -63,6 +62,6 @@ library(patchwork)
 views + likes + comments + plot_layout(nrow = 1) +
   plot_annotation(title = "Trending Youtube Videos in 2017/18",
                   caption = "Data: Kaggle") &
-  theme(plot.title = element_text(size = 17))
+  theme(plot.title = element_text(size = 15))
 
 
