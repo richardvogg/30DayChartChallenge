@@ -57,3 +57,23 @@ My contributions to the 30DayChartChallenge. The original page and description c
 ## Day 15 - Multivariate
 
 ![](day15_multivariate/plot.png)
+
+## Day 16 - Trees
+
+![](day16_trees/plot.png)
+
+## Day 17 - Pop culture
+
+![](day17_pop_culture/plot.png)
+
+## Day 18 - Connections
+
+![](day18_connections/plot.png)
+
+## Day 19 - Global change
+
+![](day19_global_change/plot.png)
+
+## Day 20 - Upwards
+
+![](day20_upwards/plot.png)
