@@ -50,7 +50,8 @@ germany_df <- df %>%
 g <- germany_df %>%
   ggplot(aes(x = date, y = result_difference, xend = date, yend = 0)) + 
   geom_label(aes(label = scoreboard, x = as.Date("1970-01-01"), y = 15)) +
-  geom_segment(data = germany_df %>% select(-date_id_final)) +
+  geom_segment(data = germany_df %>% select(-date_id_final),
+               aes(col = result)) +
   geom_point(data = germany_df %>% select(-date_id_final),
              aes(col = result)) +
   geom_segment(size = 1, col = "red") +
