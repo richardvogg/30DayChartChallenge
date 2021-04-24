@@ -7,10 +7,7 @@ library(reticulate) #Python connection for encoding of weird letters
 use_python("C:/Users/Richard/anaconda3",required=TRUE)
 source_python("day17_pop_culture/change_encoding.py")
 
-#fonts
 
-sysfonts::font_add_google(name = "Jura", "Jura")
-showtext::showtext_auto()
 
 df <- read.csv("C:/Richard/R and Python/Datasets/soccer_results_kaggle.csv")
 
