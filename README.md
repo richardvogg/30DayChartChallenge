@@ -77,3 +77,19 @@ My contributions to the 30DayChartChallenge. The original page and description c
 ## Day 20 - Upwards
 
 ![](day20_upwards/plot.png)
+
+## Day 21 - Downwards
+
+![](day21_downwards/plot.png)
+
+## Day 22 - Animation
+
+![](day22_animation/plot.gif)
+
+## Day 23 - Tiles
+
+![](day23_tiles/plot.png)
+
+## Day 24 - Monochrome
+
+![](day24_monochrome/plot.png)
