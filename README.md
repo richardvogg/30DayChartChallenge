@@ -26,6 +26,10 @@ My contributions to the 30DayChartChallenge. The original page and description c
 
 ![](day06_experimental/plot.png)
 
+## Day 7 - Physical
+
+![](day07_physical/plot.png)
+
 ## Day 8 - Animals
 
 ![](day08_animals/plot.png)
@@ -93,3 +97,11 @@ My contributions to the 30DayChartChallenge. The original page and description c
 ## Day 24 - Monochrome
 
 ![](day24_monochrome/plot.png)
+
+## Day 25 - Demographic
+
+![](day25_demographic/plot.png)
+
+## Day 26 - Trends
+
+![](day26_trends/plot.png)
