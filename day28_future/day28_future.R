@@ -11,6 +11,7 @@ sysfonts::font_add_google(name = "Just Another Hand", "JustHand")
 sysfonts::font_add_google(name = "Teko", "Teko")
 showtext::showtext_auto()
 
+#secret keys
 api_key = '***'
 api_secret_key = '***'
 access_token = '***'
