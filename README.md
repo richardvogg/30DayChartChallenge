@@ -105,3 +105,15 @@ My contributions to the 30DayChartChallenge. The original page and description c
 ## Day 26 - Trends
 
 ![](day26_trends/plot.png)
+
+## Day 27 - Educational
+
+![](day27_educational/plot.png)
+
+## Day 28 - Future
+
+![](day28_future/plot.png)
+
+## Day 29 - Deviations
+
+![](day29_deviations/plot.png)
