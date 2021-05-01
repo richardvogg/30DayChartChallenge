@@ -117,3 +117,7 @@ My contributions to the 30DayChartChallenge. The original page and description c
 ## Day 29 - Deviations
 
 ![](day29_deviations/plot.png)
+
+## Day 30 - 3D
+
+![](day30_3D/plot.png)
